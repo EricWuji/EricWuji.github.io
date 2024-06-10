@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1" theme-name="Stellar" theme-version="1.28.1">
-  <meta name="robots" content="none">
+  
   <meta name="generator" content="Hexo 7.2.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,14 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>Hexo</title>
+  <title>后缀的一些运用1 - Hexo</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/404.html">
+    <meta name="description" content="后缀数组的一些运用和小结论11.最长重复子串原题地址 题目大意：给你一个字符串，让你求出至少出现两次的最长子串 解：这是一道板子题，所谓至少出现两次，其实就是我的$hegiht[i]$，即我的$lcp(s_1,s_2)$。所以我只要求出所有的height取最大值即可 时间复杂度$O(n\log n)$ 2.字符加密原题地址 解：看到环形字符串，下意识就会把它复制一份拼上。之后直接跑一个SA，收集答">
+<meta property="og:type" content="article">
+<meta property="og:title" content="后缀的一些运用1">
+<meta property="og:url" content="http://example.com/2024/06/10/%E5%90%8E%E7%BC%80%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%90%E7%94%A81/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="后缀数组的一些运用和小结论11.最长重复子串原题地址 题目大意：给你一个字符串，让你求出至少出现两次的最长子串 解：这是一道板子题，所谓至少出现两次，其实就是我的$hegiht[i]$，即我的$lcp(s_1,s_2)$。所以我只要求出所有的height取最大值即可 时间复杂度$O(n\log n)$ 2.字符加密原题地址 解：看到环形字符串，下意识就会把它复制一份拼上。之后直接跑一个SA，收集答">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-06-10T07:50:23.000Z">
+<meta property="article:modified_time" content="2024-06-10T13:43:22.904Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -45,7 +49,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="404" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="undefined" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Hexo</div></a></div></header>
@@ -57,28 +61,61 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/06/10/%E5%90%8E%E7%BC%80%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%90%E7%94%A81/"><span class="title">后缀的一些运用1</span></a><a class="item title" href="/2024/06/09/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84SA/"><span class="title">后缀数组SA</span></a><a class="item title" href="/2024/06/07/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA-SAM/"><span class="title">后缀自动机(SAM)</span></a><a class="item title" href="/2024/06/05/post-title/"><span class="title">post title</span></a><a class="item title" href="/2024/06/06/article-title/"><span class="title">article title</span></a><a class="item title" href="/2024/06/05/hello-world/"><span class="title">Hello World</span></a></div></widget>
-
-
 </div>
 
 </div></aside><div class="l_main" id="main">
 
 
 
-<article class='md-text error-page'>
-  <h1><img id='error' src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/404/1c830bfcd517d.svg' alt='404'></h1>
-  <p class='what'>
-    <strong>
-      抱歉，找不到您存取的頁面
-    </strong>
-  </p>
-  <p class='why'>
-    可能是網址有誤或已經刪除
-  </p>
-  <br><br>
-  <a class='button' id='back' href="/">返回首頁</a>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">首頁</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">網誌</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">發布於：<time datetime="2024-06-10T07:50:23.000Z">2024-06-10</time></span><span class="sep updated"></span><span class="text updated">更新於：<time datetime="2024-06-10T13:43:22.904Z">2024-06-10</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>后缀的一些运用1</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="后缀数组的一些运用和小结论1"><a href="#后缀数组的一些运用和小结论1" class="headerlink" title="后缀数组的一些运用和小结论1"></a>后缀数组的一些运用和小结论1</h1><h3 id="1-最长重复子串"><a href="#1-最长重复子串" class="headerlink" title="1.最长重复子串"></a>1.最长重复子串</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-duplicate-substring/description/">原题地址</a></p>
+<p>题目大意：给你一个字符串，让你求出至少出现两次的最长子串</p>
+<p>解：这是一道板子题，所谓至少出现两次，其实就是我的$hegiht[i]$，即我的$lcp(s_1,s_2)$。所以我只要求出所有的height取最大值即可</p>
+<p>时间复杂度$O(n\log n)$</p>
+<h3 id="2-字符加密"><a href="#2-字符加密" class="headerlink" title="2.字符加密"></a>2.字符加密</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4051">原题地址</a></p>
+<p>解：看到环形字符串，下意识就会把它复制一份拼上。之后直接跑一个SA，收集答案时，对于$sa[i]&gt;n$的情况，我们不做处理，因为他不在我要的$[1,n]$的区间内。</p>
+<h3 id="3-New-Distinct-Substrings"><a href="#3-New-Distinct-Substrings" class="headerlink" title="3.New Distinct Substrings"></a>3.New Distinct Substrings</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/SP705">原题地址</a></p>
+<p>题目大意：给你一个字符串问有几个本质不同的子串，即若子串形态相同，位置不同，算同一种</p>
+<p>解：我们先考虑在sa排序上相邻的两个子串，可以发现$sa[i-1]$可以代表$len(sa[i-1])$种子串，同理$sa[i]$可以代表$len(sa[i])$种子串，他们之间有$len(lcp(sa[i-1],sa[i]))= height[i]$，也就意味着他们有$height[i]$个子串是本质相同的。故$sa[i]和sa[i-1]$对答案的贡献为$len(sa[i-1])+len(sa[i])-height[i]$，对于整个字符串一共有后缀$\frac{n*(n+1)}{2}$个，也就是$\sum_{i=1}^nlen(sa[i])$</p>
+<p>所以最后的答案为$\frac{n*(n+1)}{2}-\sum_{i=1}^n height[i]$</p>
+<h3 id="4-NSUBSTR-Substrings"><a href="#4-NSUBSTR-Substrings" class="headerlink" title="4.NSUBSTR - Substrings"></a>4.NSUBSTR - Substrings</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/SP8222">原题地址</a></p>
+<p>题目大意：给你一个字符串，问长度为$[1,n]$的子串最多出现了多少次</p>
+<p>解：首先我们通过SA可以得到SA中相邻两个字符串的lcp，对于任意两个字符串，有$lcp(s_1,s_2)=\min_{k=i}^j(height[k])$，因此对于长度为L的一个子串，它出现的最多次数，就是在SA上连续$height[i]\ge L$的最长长度，因为他们的lcp是连续的。</p>
+<p>如何求出这个长度呢？使用单调栈，先从左往右扫一遍，得到满足$height[i]\ge L$的最左端点位置，再从右往左扫一遍，得到满足$height[i]\ge L$的最右端位置，最后枚举每个位置计算$len[i]=right[i]-left[i]+2$（包括左右端点）</p>
+<p>最后算答案的时候，需要利用长度长的出现次数来更新，长度短的出现次数，因为它可能没有被统计到</p>
+<p>单调栈代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">mono_stack</span> &#123;</span><br><span class="line">	<span class="type">int</span> stk[MAXN], top;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">push</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">while</span> (top &gt; <span class="number">1</span> &amp;&amp; height[stk[top]] &gt;= height[x]) -- top;</span><br><span class="line">		stk[++top] = x;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="type">int</span> <span class="title">back</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> stk[top - <span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		top = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">mono_stack stk;</span><br><span class="line"><span class="type">int</span> ll[MAXN], rr[MAXN];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	stk.<span class="built_in">push</span>(<span class="number">0</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++)	stk.<span class="built_in">push</span>(i), ll[i] = stk.<span class="built_in">back</span>() + <span class="number">1</span>;</span><br><span class="line">	stk.<span class="built_in">clear</span>(), stk.<span class="built_in">push</span>(n + <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n;i &gt;= <span class="number">1</span>;i--) 	stk.<span class="built_in">push</span>(i), rr[i] = stk.<span class="built_in">back</span>() - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) times[height[i]] = <span class="built_in">max</span>(times[height[i]], rr[i] - ll[i] + <span class="number">2</span>);</span><br><span class="line">	times[n + <span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = n;i &gt;= <span class="number">1</span>;i--) times[i] = <span class="built_in">max</span>(times[i], times[i + <span class="number">1</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>授權條款</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
 </article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">較早文章</div><a href="/2024/06/09/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84SA/">后缀数组SA</a></div></section></div>
+
+
 
 
 
@@ -86,7 +123,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">John Doe</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目錄</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%80%E4%BA%9B%E8%BF%90%E7%94%A8%E5%92%8C%E5%B0%8F%E7%BB%93%E8%AE%BA1"><span class="toc-text">后缀数组的一些运用和小结论1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%80%E9%95%BF%E9%87%8D%E5%A4%8D%E5%AD%90%E4%B8%B2"><span class="toc-text">1.最长重复子串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AD%97%E7%AC%A6%E5%8A%A0%E5%AF%86"><span class="toc-text">2.字符加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-New-Distinct-Substrings"><span class="toc-text">3.New Distinct Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-NSUBSTR-Substrings"><span class="toc-text">4.NSUBSTR - Substrings</span></a></li></ol></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到頂部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>參與討論</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -441,6 +485,26 @@
       })
     }
   });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
