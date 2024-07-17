@@ -23,12 +23,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="牛客暑假多校第一场解题报告比赛链接 A. A Bit Common原题链接 题目大意：对于一个序列A（每个数都$\lt 2^m$），存在一个子序列B，使得$AND_{i \in B}B_i&#x3D;1$，则被计数，问一共有几个这样的序列A，允许有重复数字 解：我们先钦定有序列A的长度是k，那么这k个数一定都是奇数，换句话说他们二进制的最后一位一定是1，现在考虑前面的$m-1$位，显然，如果我想让他们的AN">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/Users/11506/test/source/_posts/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
+<meta property="og:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
 <meta property="article:published_time" content="2024-07-17T06:34:30.000Z">
-<meta property="article:modified_time" content="2024-07-17T07:53:54.861Z">
+<meta property="article:modified_time" content="2024-07-17T07:55:48.327Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/Users/11506/test/source/_posts/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
+<meta name="twitter:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
   
   
   
@@ -289,7 +289,7 @@
 <p>显然，如果一个序列A只有一个子序列AND=0，则序列A中的每一个数字都至少都对应这一个特殊位：因为如果某一个数字对应两个及以上的特殊位的话，这个数字完全可以被删去，不符合我们的定义。</p>
 <p>我们设$dp[i][j]$表示$i$个数字对应$j$个特殊位有几种方案数。有如下转移$dp[i][j]= i \times(dp[i][j-1]+dp[i-1][j-1])$。</p>
 <p>为什么呢？如下图（图片里下标好像写错了，是从1开始的，而不是0）：</p>
-<p><img src="/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/Users\11506\test\source\_posts\牛客多校1\B.jpg" srcset="/img/loading.gif" lazyload alt></p>
+<p><img src="/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg" srcset="/img/loading.gif" lazyload alt></p>
 <p>对于从$dp[i][j-1]$转移过来的情况，我的第j位可以在i个数中任选一个，有贡献$i\times dp[i][j-1]$</p>
 <p>对于从$dp[i-1][j-1]$转移过来的情况（此时我们认为新增的特殊位就在i上），我新增的数可以放在任意一个位置上，所以也有贡献$i\times dp[i1-][j-1]$</p>
 <p>最后可以求得严格等于1的方案数为$\sum_{i=k}^{m-1} \binom{m-1}{i}(2^k-k-1)^{m-1-k}dp[k][i]$</p>
