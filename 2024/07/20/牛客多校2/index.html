@@ -16,23 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="牛客暑假多校第一场解题报告比赛链接 A. A Bit Common原题链接 题目大意：对于一个序列A（每个数都$\lt 2^m$），存在一个子序列B，使得$AND_{i \in B}B_i&#x3D;1$，则被计数，问一共有几个这样的序列A，允许有重复数字 解：我们先钦定有序列A的长度是k，那么这k个数一定都是奇数，换句话说他们二进制的最后一位一定是1，现在考虑前面的$m-1$位，显然，如果我想让他们的AN">
+    <meta name="description" content="牛客暑期多校2比赛链接 A. Floor Tiles题目链接 找规律的题目，看题解即可 B.MST题目链接 解：一道使用根号分治的暴力题目。 首先我们一共有两种暴力方式，一种是$O(n^2)$的遍历任意给定的两个点，得到我需要的合法边，再对边进行kruskal算法得到最小生成树 还有另一种方法是$O(m)$的枚举我所有的边，看这个边的两端是否都在集合中，这一步骤相当于是做了一遍kruskal。 第">
 <meta property="og:type" content="article">
-<meta property="og:title" content="牛客多校1">
-<meta property="og:url" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/index.html">
+<meta property="og:title" content="牛客多校2">
+<meta property="og:url" content="http://example.com/2024/07/20/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A12/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="牛客暑假多校第一场解题报告比赛链接 A. A Bit Common原题链接 题目大意：对于一个序列A（每个数都$\lt 2^m$），存在一个子序列B，使得$AND_{i \in B}B_i&#x3D;1$，则被计数，问一共有几个这样的序列A，允许有重复数字 解：我们先钦定有序列A的长度是k，那么这k个数一定都是奇数，换句话说他们二进制的最后一位一定是1，现在考虑前面的$m-1$位，显然，如果我想让他们的AN">
+<meta property="og:description" content="牛客暑期多校2比赛链接 A. Floor Tiles题目链接 找规律的题目，看题解即可 B.MST题目链接 解：一道使用根号分治的暴力题目。 首先我们一共有两种暴力方式，一种是$O(n^2)$的遍历任意给定的两个点，得到我需要的合法边，再对边进行kruskal算法得到最小生成树 还有另一种方法是$O(m)$的枚举我所有的边，看这个边的两端是否都在集合中，这一步骤相当于是做了一遍kruskal。 第">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
-<meta property="article:published_time" content="2024-07-17T06:34:30.000Z">
-<meta property="article:modified_time" content="2024-07-17T13:28:35.780Z">
+<meta property="article:published_time" content="2024-07-20T12:12:38.000Z">
+<meta property="article:modified_time" content="2024-07-20T14:11:19.975Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg">
   
   
   
-  <title>牛客多校1 - Hexo</title>
+  <title>牛客多校2 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="牛客多校1"></span>
+            <span id="subtitle" data-typed-text="牛客多校2"></span>
           
         </div>
 
@@ -209,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-17 14:34" pubdate>
-          2024年7月17日 下午
+        <time datetime="2024-07-20 20:12" pubdate>
+          2024年7月20日 晚上
         </time>
       </span>
     
@@ -221,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.5k 字
         
       </span>
     
@@ -269,41 +267,47 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">牛客多校1</h1>
+            <h1 id="seo-header">牛客多校2</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="牛客暑假多校第一场解题报告"><a href="#牛客暑假多校第一场解题报告" class="headerlink" title="牛客暑假多校第一场解题报告"></a>牛客暑假多校第一场解题报告</h2><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81596">比赛链接</a></p>
-<h3 id="A-A-Bit-Common"><a href="#A-A-Bit-Common" class="headerlink" title="A. A Bit Common"></a>A. A Bit Common</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81596/A">原题链接</a></p>
-<p>题目大意：对于一个序列A（每个数都$\lt 2^m$），存在一个子序列B，使得$AND_{i \in B}B_i=1$，则被计数，问一共有几个这样的序列A，允许有重复数字</p>
-<p>解：我们先钦定有序列A的长度是k，那么这k个数一定都是奇数，换句话说他们二进制的最后一位一定是1，现在考虑前面的$m-1$位，显然，如果我想让他们的AND和是1的话，这$m-1$位一定至少有一个0，所以一共有$\binom{n}{k}\times (2^k-1)^{m-1}$。</p>
-<p>解释一下，$2^k$表示我第i位任意选的情况总数，$2^k-1$表示从这所有的情况中去除全部为1的情况。</p>
-<p>接着我们再去考虑其余$n-k$个数，他们最后一位一定是0，所以他们无论怎么AND，一定不会得到结果1，所以其余的数只要最后一位是0即可，前面$m-1$位任取，一共有方案数$2^{(m-1)\times(n-k)}$</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs cpp">cin &gt;&gt; n &gt;&gt; m &gt;&gt; mod;<br>   <span class="hljs-type">int</span> co = <span class="hljs-number">1</span>, ans = <span class="hljs-number">0</span>;<br>   <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;i &lt;= n;i++) &#123;<br>       a[i][<span class="hljs-number">0</span>] = a[i][i] = <span class="hljs-number">1</span>;<br>       <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">1</span>;j &lt; i;j++) &#123;<br>           a[i][j] = (a[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>] + a[i - <span class="hljs-number">1</span>][j]) % mod;<br>       &#125;<br>   &#125;<br>   <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> k = <span class="hljs-number">1</span>;k &lt;= n;k++) &#123;<br>       <span class="hljs-comment">// co = ((co * (n - k + 1) % mod) % mod * inv % mod) % mod;</span><br>       <span class="hljs-type">int</span> co = a[n][k];<br>       <span class="hljs-type">int</span> res1 = (<span class="hljs-built_in">qpow</span>(<span class="hljs-number">2</span>, k) - <span class="hljs-number">1</span> + mod) % mod, res2 = <span class="hljs-built_in">qpow</span>(res1, m - <span class="hljs-number">1</span>), <br>           res3 = <span class="hljs-built_in">qpow</span>(<span class="hljs-number">2</span>, m - <span class="hljs-number">1</span>), res4 = <span class="hljs-built_in">qpow</span>(res3, n - k);<br>       ans = (ans + co * res2 % mod * res4 % mod) % mod;<br>   &#125;<br>   cout &lt;&lt; ans &lt;&lt; endl;<br></code></pre></td></tr></table></figure>
-<h3 id="B-A-Bit-More-Common"><a href="#B-A-Bit-More-Common" class="headerlink" title="B. A Bit More Common"></a>B. A Bit More Common</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81596/B">原题链接</a></p>
-<p>题目大意：与A题不同的是，这道题目要求序列A存在至少两个子序列B，使得$AND_{i\in B}B_i = 1$</p>
-<p>解：承接第一道题目的思路，我们在A题中已经得到存在至少一个子序列的个数了，是不是只需要减去存在严格等于1的方案数，剩下来的就是我B的方案数。</p>
-<p>那么我该怎么算出这些严格等于1的方案数呢？</p>
-<p>我们给出以下定义：如果某一位的数字中只有一个0，那么这位数就是不可或缺的，我们称这样的位为特殊位。注意：这里我们不讨论这$i$个数具体是什么，只谈论这一位的数字分布情况，当然了，我们讨论的前提都是这个序列A满足$AND_{i\in A}A_i=1$。</p>
-<p>显然，如果一个序列A只有一个子序列AND=0，则序列A中的每一个数字都至少都对应这一个特殊位：因为如果某一个数字对应两个及以上的特殊位的话，这个数字完全可以被删去，不符合我们的定义。</p>
-<p>我们设$dp[i][j]$表示$i$个数字对应$j$个特殊位有几种方案数。有如下转移$dp[i][j]= i \times(dp[i][j-1]+dp[i-1][j-1])$。</p>
-<p>为什么呢？如下图（图片里下标好像写错了，是从1开始的，而不是0）：</p>
-<p><img src="/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/B.jpg" srcset="/img/loading.gif" lazyload alt></p>
-<p>对于从$dp[i][j-1]$转移过来的情况，我的第j位可以在i个数中任选一个，有贡献$i\times dp[i][j-1]$</p>
-<p>对于从$dp[i-1][j-1]$转移过来的情况（此时我们认为新增的特殊位就在i上），我新增的数可以放在任意一个位置上，所以也有贡献$i\times dp[i1-][j-1]$</p>
-<p>最后可以求得严格等于1的方案数为$\sum_{i=k}^{m-1} \binom{m-1}{i}(2^k-k-1)^{m-1-k}dp[k][i]$</p>
-<p>最后的答案就是A的答案减去严格等于1的答案。</p>
-<p>NOTE：用板子会快一点。</p>
-<h3 id="D-XOR-of-Suffix-Sums"><a href="#D-XOR-of-Suffix-Sums" class="headerlink" title="D. XOR of Suffix Sums"></a>D. XOR of Suffix Sums</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81596/D">原题链接</a></p>
-<p>题目大意：在线查询数组后缀和的异或和</p>
-<p>解：这个模数十分特别刚好是$2^{21}$，所以暗示我们可以按位维护我要的答案。</p>
-<p>一个后缀可以转换为两个前缀和的差，有$sum[n]-sum[i-1]=suf[i]$，因此这道题目需要我们维护一个值域树状数组，维护的值域都是$-sum[i]$，其中$-sum[n]$不会在树状数组中维护。</p>
-<p>现在我想要知道第$d$位一共有奇数个还是偶数个1，观察可得如下结论：若$sum[n]-sum[i-1] \mod{2^{d+1}} \ge 2^{d}$则$sum[i-1]$在$d$位贡献了1，我们可以利用这个式子得到如下结论：</p>
-<p>$2^{d+1} \gt (sum[n]-x) \mod{2^{d+1}} \ge2^d \\ \Rightarrow 2^{d+1} - sum[n] \mod{2^{d+1}} \gt -x \ge 2^d-sum[n] \mod{2^{d+1}}$</p>
-<p>得到了我要查询的x所在的上下界，分别是$l=2^d-sum[n] \mod{2^{d+1}},\quad  r=2^{d+1}-sum[n] \mod{2^{d+1}}$</p>
-<p>当我的$l \le r$时，正常查询，当我的$r \lt l$时需要查询$[0,r]\cup[l,2^{d+1}]$。为什么，可以理解为因为有取模的存在导致原本在$l$后面的$r$重新出现在了$l$的前面，这是$[r+ 1,l -1]$的区间是不用查询的。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">int</span> q;<br>   cin &gt;&gt; q;<br>   <span class="hljs-keyword">while</span> (q --) &#123;<br>       <span class="hljs-type">int</span> t, v;   cin &gt;&gt; t &gt;&gt; v;<br>       <span class="hljs-keyword">while</span> (t--) &#123;<br>           <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>, mod;i &lt;= <span class="hljs-number">20</span>;i++) &#123;<br>               mod = <span class="hljs-number">1</span> &lt;&lt; (i + <span class="hljs-number">1</span>);<br>               tr[i].<span class="hljs-built_in">update</span>((mod - sum[n - <span class="hljs-number">1</span>] % mod) % mod, <span class="hljs-number">-1</span>);<br>           &#125;<br>           n --;<br>       &#125;       <br>       n ++; sum[n] = (sum[n - <span class="hljs-number">1</span>] + v) % MOD;<br>       <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>, mod;i &lt;= <span class="hljs-number">20</span>;i++) &#123;<br>           mod = <span class="hljs-number">1</span> &lt;&lt; (i + <span class="hljs-number">1</span>);<br>           tr[i].<span class="hljs-built_in">update</span>((mod - sum[n - <span class="hljs-number">1</span>] % mod + mod) % mod, <span class="hljs-number">1</span>);<br>       &#125;<br>       <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>       <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>, cnt = <span class="hljs-number">0</span>;i &lt;= <span class="hljs-number">20</span>;i++) &#123;<br>           <span class="hljs-type">int</span> mod = <span class="hljs-number">1</span> &lt;&lt; (i + <span class="hljs-number">1</span>), tmp = <span class="hljs-number">1</span> &lt;&lt; i;<br>           <span class="hljs-type">int</span> l = ((tmp - sum[n] % mod) + mod) % mod;<br>           <span class="hljs-type">int</span> r = ((mod - sum[n] % mod) - <span class="hljs-number">1</span> + mod) % mod; <br>           <span class="hljs-keyword">if</span> (l &lt;= r) &#123;<br>               cnt = tr[i].<span class="hljs-built_in">query</span>(l, r);<br>           &#125; <span class="hljs-keyword">else</span> &#123;<br>               cnt = tr[i].<span class="hljs-built_in">query</span>(<span class="hljs-number">0</span>, r) + tr[i].<span class="hljs-built_in">query</span>(l, mod);<br>           &#125;<br>           <span class="hljs-keyword">if</span> (cnt &amp; <span class="hljs-number">1</span>) ans |= (<span class="hljs-number">1</span> &lt;&lt; i);<br>       &#125;<br>       cout &lt;&lt; ans &lt;&lt; endl;<br>   &#125;<br></code></pre></td></tr></table></figure>
+                <h2 id="牛客暑期多校2"><a href="#牛客暑期多校2" class="headerlink" title="牛客暑期多校2"></a>牛客暑期多校2</h2><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81597#question">比赛链接</a></p>
+<h3 id="A-Floor-Tiles"><a href="#A-Floor-Tiles" class="headerlink" title="A. Floor Tiles"></a>A. Floor Tiles</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81597/A">题目链接</a></p>
+<p>找规律的题目，看题解即可</p>
+<h3 id="B-MST"><a href="#B-MST" class="headerlink" title="B.MST"></a>B.MST</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81597/B">题目链接</a></p>
+<p>解：一道使用根号分治的暴力题目。</p>
+<p>首先我们一共有两种暴力方式，一种是$O(n^2)$的遍历任意给定的两个点，得到我需要的合法边，再对边进行kruskal算法得到最小生成树</p>
+<p>还有另一种方法是$O(m)$的枚举我所有的边，看这个边的两端是否都在集合中，这一步骤相当于是做了一遍kruskal。</p>
+<p>第一种方式的时间复杂度是$O(q\times |q|^2\log{n})$，第二种的时间复杂度是$O(qm\log{n})$</p>
+<p>对此我们进行根号分治对于$q\le \sqrt{n}$时，我们采用第一种策略，此时方案的整体复杂度是$O(n^{1.5}\log{n})$</p>
+<p>而对于$q \gt \sqrt{n}$的情况，我们采用第二种策略，此时方案的整体复杂度为$O(\sqrt{n}\times m \times \log{m})$</p>
+<h3 id="G-The-Set-of-Squares"><a href="#G-The-Set-of-Squares" class="headerlink" title="G.The Set of Squares"></a>G.The Set of Squares</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81597/G">原题链接</a></p>
+<p>解：一道十分经典的质因数状态压缩 + 分组背包的题目。</p>
+<p>先看一道例题<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=6125">Free from square</a></p>
+<p>我们发现小于$\sqrt{n}$的质数很少，只有8个，所以可以把这些质数的状态记录下来。为什么这里只需要考虑小于$\sqrt{n}$的整数呢？因为大于等于$\sqrt{n}$的整数在同一个数字中只会出现一次。</p>
+<p>我们设$dp[i][j][k]$表示前$i$个数，选择了$j$个物品，剩余的状态是$k$。当然这里的$i$可以被滚动掉。</p>
+<p>那么分组背包在哪里体现呢？体现在前面没有被记录状态的大于等于$\sqrt{n}$的大质数。对于拥有相同大质数的$a,b$我们可以考虑把他们放在同一组中。这样的话，就不需要考虑没有被记录的大质数对答案的影响了。</p>
+<p>那么这个状态如何转移呢？考虑从$status$转移过来，有$dp[i][j+1][k | status]+=dp[i-1][j]<a href="当status \&amp;u=0">status</a>$，为什么呢？因为当且仅当$status \&amp;u=0$时，前后两者的质因数才没有交集，不会出现非法情况</p>
+<p>最后一个问题，对于可以被小于$\sqrt{n}$的质数进行质因数分解的数字$i$，是存在$v[1]$的背包里，还是存在$v[i]$的背包里呢？在这道题目中，当然是放在$v[i]$的背包中，因为这里的1是要单独讨论的。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n, k, cur = <span class="hljs-number">0</span>;<br>    cin &gt;&gt; n &gt;&gt; k;<br>    <span class="hljs-built_in">memset</span>(dp, <span class="hljs-number">0</span>, <span class="hljs-built_in">sizeof</span>(dp));<br>    dp[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>;i &lt;= n;i++) &#123;<br>        <span class="hljs-keyword">if</span> (flag[i] || v[i].<span class="hljs-built_in">empty</span>()) <span class="hljs-keyword">continue</span>;<br>        <span class="hljs-type">int</span> nxt = cur ^ <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = k;j &gt;= <span class="hljs-number">0</span>;j--) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> u = <span class="hljs-number">0</span>;u &lt; (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">8</span>);u++) &#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;x : v[i]) &#123;<br>                    dp[nxt][j][u] = dp[cur][j][u];<br>                    <span class="hljs-keyword">if</span> (x &gt; n) <span class="hljs-keyword">continue</span>;<br>                    <span class="hljs-keyword">if</span> ((state[x] &amp; u) == <span class="hljs-number">0</span>) <br>                        dp[nxt][j + <span class="hljs-number">1</span>][u | state[x]] = <br>                        (dp[nxt][j + <span class="hljs-number">1</span>][u | state[x]] + dp[cur][j][u]) % mod;<br>                &#125;<br>            &#125;<br>        &#125;<br>        cur = nxt;<br>    &#125;<br>    <span class="hljs-type">int</span> ans = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>;i &lt;= k;i++) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> u = <span class="hljs-number">0</span>;u &lt; (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">8</span>);u++) &#123;<br>            ans = (ans + dp[cur][i][u]) % mod;<br>        &#125;<br>    &#125;<br>    cout &lt;&lt; ans &lt;&lt; endl;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>回到牛客的这道题目。他是要求乘积得到一个平方数。</p>
+<p>这时我们的预处理和前面的例题是相同的，分组后得到每个数的$val$和$state$</p>
+<p>之后我们选择把能分解干净的数字全部放在$v[1]$位置，因为这样可以避免把1单独拿出来讨论。</p>
+<p>另一点，这里我们需要考虑对于同一组的数字，如果选择两个，也要考虑他们的贡献。这个应该如何实现呢？我们可以在原来的状态基础上再增加一位表示大质数的个数。</p>
+<p>接下来考虑该如何转移，我们设$dp[i]$表示剩余状态是$i$的时候，我的最大收益。</p>
+<p>对于从状态$s$，数字$j$转移过来，我们考虑他们的贡献，一个是大质数可能的贡献$j$，以及小质数重合产生平方得到的贡献</p>
+<p>有$dp[i \land j]= dp[i \land j]+dp[j]\times val \times w[i\&amp;j] \times 大质数$。</p>
+<p>为什么前面有一个异或呢？因为我选择$j$状态后，会抵消之前的重复的1</p>
+<p>为什么后面是与，与得到的就是重合的小质数，$w[i\&amp;j]$就是得到他们的值。</p>
+<p>最后一个问题，为什么最后的结果要减1，因为我最开始为了计算强行给$dp[0]=1$，导致计数增加</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;i &lt; n;i++) cin &gt;&gt; a[i];<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;i &lt; n;i++) &#123;<br>		<span class="hljs-type">int</span> x = a[i];<br>		<span class="hljs-type">int</span> tmp = <span class="hljs-number">0</span>, val = <span class="hljs-number">1</span>;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;i &lt; <span class="hljs-number">11</span>;i++) &#123;<br>			<span class="hljs-type">int</span> cnt = <span class="hljs-number">0</span>;<br>			<span class="hljs-keyword">while</span> (x % primes[i] == <span class="hljs-number">0</span>) &#123;<br>				x /= primes[i];<br>				<span class="hljs-keyword">if</span> (tmp &amp; (<span class="hljs-number">1</span> &lt;&lt; i)) val = (val * primes[i]) % mod;	<br>				tmp ^= (<span class="hljs-number">1</span> &lt;&lt; i);<br>			&#125;<br>		&#125;<br>		v[x].<span class="hljs-built_in">emplace_back</span>(val, tmp);<br>	&#125;<br>	<span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">dp</span><span class="hljs-params">(<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">12</span>, <span class="hljs-number">0</span>)</span></span>;<br>	dp[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>;i &lt;= <span class="hljs-number">1000</span>;i++) &#123;<br>		<span class="hljs-keyword">if</span> (v[i].<span class="hljs-built_in">empty</span>()) <span class="hljs-keyword">continue</span>;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> [val, mask] : v[i]) &#123;<br>			<span class="hljs-keyword">if</span> (i != <span class="hljs-number">1</span>)<br>				mask |= (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">11</span>);	<span class="hljs-comment">//大质数存在第十一位上</span><br>			<span class="hljs-keyword">auto</span> b = dp;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;j &lt; (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">12</span>);j++) &#123;<br>				<span class="hljs-type">int</span> tmp = mask ^ j, newval = dp[j] * val, same = mask &amp; j;<br>				<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> k = <span class="hljs-number">0</span>;k &lt; <span class="hljs-number">11</span>;k++) &#123;<br>					<span class="hljs-keyword">if</span> (same &amp; (<span class="hljs-number">1</span> &lt;&lt; k)) &#123;<br>						newval = (newval * primes[k]) % mod;<br>					&#125;<br>				&#125;<br>				<span class="hljs-keyword">if</span> (same &amp; (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">11</span>)) newval = (newval * i) % mod;<br>				b[tmp] = (b[tmp] + newval) % mod;<br>			&#125;<br>			dp = std::<span class="hljs-built_in">move</span>(b);<br>		&#125;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">11</span>);j &lt; (<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">12</span>);j++) dp[j] = <span class="hljs-number">0</span>;<br>	&#125;<br>	cout &lt;&lt; (dp[<span class="hljs-number">0</span>] - <span class="hljs-number">1</span> + mod) % mod &lt;&lt; endl;	<br></code></pre></td></tr></table></figure>
+<h3 id="I-Red-Playing-Cards"><a href="#I-Red-Playing-Cards" class="headerlink" title="I.Red Playing Cards"></a>I.Red Playing Cards</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/81597/I">原题链接</a></p>
+<p>把$[l,r]$消去得到$a[l]\times len$的$val$，我们可以把他看成把$[l,r]$全部变成$a[l]$得到的结果</p>
+<p>所以我们设$dp[i]$表示消去数字$i$得到的最大价值，$g[j]$表示消去i数字的时候在$j$位置得到的最大价值</p>
+<p>如何转移呢？$g[i]= \begin{cases} g[i-1]+num &amp;\text{others} \\ g[l[a_i]-1]+dp[a_i] &amp;\text{if i =a[j] and l[a[i]] &gt; l[num]} \end{cases}$</p>
+<p>这个式子很显然，不过多解释。</p>
+<p>最后提醒一点，根据$len$长度从小到大排完序后，依次进行dp</p>
 
                 
               </div>
@@ -321,8 +325,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>牛客多校1</div>
-      <div>http://example.com/2024/07/17/牛客多校1/</div>
+      <div>牛客多校2</div>
+      <div>http://example.com/2024/07/20/牛客多校2/</div>
     </div>
     <div class="license-meta">
       
@@ -334,7 +338,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月17日</div>
+          <div>2024年7月20日</div>
         </div>
       
       
@@ -366,18 +370,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/20/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A12/" title="牛客多校2">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">牛客多校2</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/10/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" title="组合数学">
-                        <span class="hidden-mobile">组合数学</span>
+                      <a href="/2024/07/17/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A11/" title="牛客多校1">
+                        <span class="hidden-mobile">牛客多校1</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
